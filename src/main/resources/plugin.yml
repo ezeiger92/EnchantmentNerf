@@ -1,0 +1,19 @@
+name: EnchantmentNerf
+main: com.chromaclypse.enchantnerf.NerfMain
+version: ${project.version}
+description: More damage for enchanted items
+author: ezeiger92
+api-version: 1.13
+commands:
+  enchantnerf:
+    description: Root nerf command
+    usage: /<command> [reload|query]
+    permission: enchantnerf.query
+    
+permissions:
+  enchantnerf.reload:
+    description: Reload the config
+    default: op
+  enchantnerf.query:
+    description: Check tool damage
+    default: op
